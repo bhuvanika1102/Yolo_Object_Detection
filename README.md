@@ -63,3 +63,6 @@ matplotlib
 ## 📌 Notes
 Make sure yolov8m.pt is downloaded or available locally.
 For GPU acceleration, ensure PyTorch is installed with CUDA.
+
+## Contact
+For any questions or comments, please reach out bhuvani1102@gmail.com.
