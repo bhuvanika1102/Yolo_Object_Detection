@@ -2,14 +2,14 @@
 
 This project demonstrates object detection using the YOLOv8 model from the Ultralytics library, applied to images from a colorful fashion dataset. The model detects multiple object classes in real-time with high accuracy and visualizes results using matplotlib.
 
-## 🚀 Features
+##  Features
 
 - Uses **YOLOv8 (medium)** pre-trained model.
 - Predicts object classes in fashion-related images.
 - Visualizes detection output using matplotlib.
 - Saves output to `runs/detect/predict`.
 
-## 🛠️ Installation
+##  Installation
 
 1. Clone the repository:
    ```bash
@@ -18,7 +18,7 @@ This project demonstrates object detection using the YOLOv8 model from the Ultra
 2. Install dependencies:
     ```bash
     pip install ultralytics matplotlib opencv-python tqdm
-## 📁 Dataset
+##  Dataset
 Place your images and annotations in the following structure:
     
     project-root/
@@ -30,12 +30,12 @@ Place your images and annotations in the following structure:
     │       └── *.txt
     Sample image used: GRdCCA.jpg
 
-## 🧠 Model Used
+##  Model Used
 YOLOv8m: A medium-sized YOLOv8 model pretrained on COCO.
 
 You can also try yolov8n-face.pt or other model variants.
 
-## 🧪 Running the Notebook
+##  Running the Notebook
 1. Open the yolo_object_detection.ipynb file.
 
 2. Run all cells step by step.
@@ -48,19 +48,19 @@ Example prediction:
     model = YOLO("yolov8m.pt")
     result = model.predict(source='GRdCCA.jpg', conf=0.1, save=True)
 
-## 🖼️ Output
+##  Output
 The output image with bounding boxes will be saved in:
 
     runs/detect/predict/GRdCCA.jpg
     
-## 📦 Requirements
+##  Requirements
 Python 3.7+
 torch
 ultralytics
 opencv-python
 matplotlib
 
-## 📌 Notes
+##  Notes
 Make sure yolov8m.pt is downloaded or available locally.
 For GPU acceleration, ensure PyTorch is installed with CUDA.
 
